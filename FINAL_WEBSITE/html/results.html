@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-CA">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/common_stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/results_stylesheet.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="../scripts/jquery.results.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocer-E-Store</title>
+</head>
+
+<body>
+    <div id="site">
+        <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="account.html">MyAccount</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="title">
+            <h1>Grocer-E-Store</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+                <div class="col-12 col-xs-3 col-sm-3 col-md-3 col-xl-3 bd-sidebar">
+                    <div id="filters">
+                        <h3>Filters</h3>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Store</h4>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="walmart" name="store">
+                                    <label class="custom-control-label" for="walmart">Walmart</label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="costco" name="store">
+                                    <label class="custom-control-label" for="costco">Costco</label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="wholefoods" name="store">
+                                    <label class="custom-control-label" for="wholefoods">WholeFoods</label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="nofrills" name="store">
+                                    <label class="custom-control-label" for="nofrills">NoFrills</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Price</h4>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="descending" name="price">
+                                    <label class="custom-control-label" for="descending">Descending</label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="ascending" name="price">
+                                    <label class="custom-control-label" for="ascending">Ascending</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="filter-results" class="btn btn-outline-success">Filter</button>
+                    <button type="button" id="clear-filter" class="btn btn-outline-danger" disabled>Clear</button>
+
+                </div>
+                <main class="col-12 col-xs-9 col-sm-9 col-md-9 col-xl-9 bd-content" role="main">
+                    <h2>Results</h2>
+                    <div class="card-columns" id="results_list">
+
+                        <!-- <div class="card">
+                            <img class="card-img-top" src="images/apple.jpg" alt="apple">
+                            <div class="card-body" data-name="Apple" data-price="0.59" data-store="Walmart">
+                                <h5 class="card-title">Apple</h5>
+                                <button type="button" class="add-to-cart align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Add to Cart</button>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <img class="card-img-top" src="images/Apple.jpg" alt="apple">
+                            <div class="card-body" data-name="Apple" data-price="0.59" data-store="Costco">
+                                <h5 class="card-title">Apple</h5>
+                                <button type="button" class="add-to-cart align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="images/Banana.jpg" alt="banana">
+                            <div class="card-body" data-name="Banana" data-price="0.25" data-store="Whole Foods">
+                                <h5 class="card-title">Banana</h5>
+                                <button type="button" class="add-to-cart align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="images/Pear.jpg" alt="pear">
+                            <div class="card-body" data-name="Pear" data-price="0.81" data-store="Walmart">
+                                <h5 class="card-title">Pear</h5>
+                                <button type="button" class="add-to-cart align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="images/Orange.jpg" alt="orange">
+                            <div class="card-body" data-name="Orange" data-price="0.64" data-store="Costco">
+                                <h5 class="card-title">Orange</h5>
+                                <button type="button" class="add-to-cart align-self-end btn btn-lg btn-block btn-primary" style="margin-top: auto;">Add to Cart</button>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <script src="jquery.cart.js"></script> -->
+
+            </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+<div id="footer">
+    <h6>Author: Pratyush Last Modified: February 3rd, 2020</h6>
+</div>
+
+</html>

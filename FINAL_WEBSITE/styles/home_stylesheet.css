@@ -1,0 +1,54 @@
+.card{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 50%;
+    background-color: #17b8571f;
+}
+
+/* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+
+.fa {
+    margin-left: 100%;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+#contact-title {
+    font-size: 2.0rem;
+}
+
+#searchbar{
+    padding-left: 15%;
+    padding-right: 15%;
+    position: relative;
+    text-align: center;
+}
+
+#searchbar form input{
+    width: -webkit-fill-available;
+}
+
+#slogan{
+    text-align: center;
+    margin-bottom: 35%;
+}
+
+#home_title{
+    margin-top: 20%;
+    position: relative;
+    text-align:center;
+}

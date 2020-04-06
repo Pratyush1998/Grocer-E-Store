@@ -1,0 +1,18 @@
+.table-bordered{
+    width: 75%;
+}
+
+.table-bordered th {
+    border: none;
+    width: 20%
+}
+
+.table-bordered td{
+    border: none;
+    width: 50%
+}
+
+.table-bordered .img-thumbnail{
+    width: fit-content;
+    vertical-align: middle;
+}

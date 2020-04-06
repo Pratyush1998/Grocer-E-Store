@@ -1,0 +1,31 @@
+.bd-sidebar{
+    border-right: solid 1px lightgrey;
+    position: sticky;
+    top: 8rem;
+    z-index: 1;
+    height: 100%;
+} 
+
+.card-img-top{
+    height: 150px;
+}
+
+.imgButton{
+    text-align:center;
+}
+
+.container-fluid{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+/* https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+@media screen and (max-width: 575px) {
+    #filters {
+      background-color: #ffff;
+    }
+  }
+
+ #footer{
+    z-index: 1;
+} 

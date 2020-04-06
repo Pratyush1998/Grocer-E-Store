@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-CA">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/common_stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/home_stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="module" src="../scripts/items.js"></script>
+    <script type="module" src="../scripts/homepage.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocer-E-Store</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="account.html">MyAccount</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html" onclick="">Cart</a>
+            </li>
+            <!-- <li class="nav-item">
+                <i id="cart-icon" class="fa fa-shopping-cart fa-2x" aria-hidden="false"></i>
+                <span id="itemCount"></span>
+            </li> -->
+        </ul>
+    </nav>
+
+
+    <div class="container-fluid">
+
+        <div id="home_title">
+            <h1>Grocer-E-Store</h1>
+        </div>
+
+        <div id="searchbar">
+            <form action="results.html">
+                <input class="form-control" type="search" id="search_input" placeholder="Search Groceries...">
+            </form>
+        </div>
+
+        <h3 id="slogan">Your one stop shop for all your grocery needs!</h3>
+
+
+        <div class="card">
+            <div class="card-body">
+                <h2 id="contact-title" class="card-title display-4">Contact Us!</h2>
+                <!-- Used https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_mail as reference -->
+                <form action="mailto:pratyush.b@hotmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="name" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" type="text" name="comment" placeholder="Comment" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+    </div>
+    <div id="footer">
+        <h6>Author: Pratyush Last Modified: February 3rd, 2020</h6>
+    </div>
+</body>
+
+</html>
